@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .font-tech {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Custom subtle film grain overlay */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Editorial crosshair and technical lines */
+.crosshair-corner {
+  position: relative;
+}
+
+.crosshair-corner::before,
+.crosshair-corner::after {
+  content: '';
+  position: absolute;
+  background-color: currentColor;
+  opacity: 0.35;
+}
+
+/* Hide scrollbar for clean horizontal reels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Perspective for 3D interactions */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Glassmorphism Buttons — Dark Mode */
+.glass-button {
+  background-color: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #EDE8E3;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover,
+.glass-button.active {
+  background-color: rgba(255, 79, 9, 0.945);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* Glassmorphism Buttons — Light Mode */
+:root:not(.dark) .glass-button,
+.light .glass-button {
+  background-color: rgba(30, 28, 26, 0.06);
+  border-color: rgba(30, 28, 26, 0.18);
+  color: #1E1C1A;
+  text-shadow: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+:root:not(.dark) .glass-button:hover,
+:root:not(.dark) .glass-button.active,
+.light .glass-button:hover,
+.light .glass-button.active {
+  background-color: rgba(255, 79, 9, 0.92);
+  border-color: #FF5500;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+@supports not (backdrop-filter: blur(16px)) {
+  .glass-button {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-button:hover,
+  .glass-button.active {
+    background-color: rgba(255, 85, 0, 0.9);
+  }
+}
