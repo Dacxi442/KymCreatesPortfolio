@@ -6,9 +6,9 @@ import { About } from './components/About';
 import { Capabilities } from './components/Capabilities';
 import { WorkArchive } from './components/WorkArchive';
 import { ProjectModal } from './components/ProjectModal';
-import { Process } from './components/Process';
+// import { Process } from './components/Process';
 import { ClientsTrust } from './components/ClientsTrust';
-import { SolutionFinder } from './components/SolutionFinder';
+// import { SolutionFinder } from './components/SolutionFinder';
 import { ResumeModal } from './components/ResumeModal';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -125,10 +125,10 @@ export default function App() {
         />
 
         {/* 6. Process: How Anthony Thinks */}
-        <Process
+        {/* <Process
           theme={theme}
           onOpenContact={scrollToContact}
-        />
+        /> */}
 
         {/* 7. Clients, Proof & Testimonials */}
         <ClientsTrust theme={theme} />

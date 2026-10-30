@@ -310,70 +310,32 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-export const PROCESS_STEPS: ProcessStep[] = [
-  {
-    number: "01",
-    title: "Understand",
-    tagline: "What are you trying to achieve?",
-    summary: "Before picking up a camera or opening code, Anthony listens. What is the fundamental challenge? Who needs to feel this? What does success look like beyond vanity metrics? This is where the solution is born.",
-    deliverable: "Creative Brief, Challenge Definition & Strategic Objectives"
-  },
-  {
-    number: "02",
-    title: "Explore",
-    tagline: "Find the creative direction.",
-    summary: "Testing the boundaries. Curating visual moods, lighting concepts, typographic explorations, and technical architectures. Finding the unexpected tension that makes the work unforgettable.",
-    deliverable: "Visual Direction Deck, Mood Architecture & Technical Feasibility"
-  },
-  {
-    number: "03",
-    title: "Create",
-    tagline: "Build the visual and digital solution.",
-    summary: "Hands-on execution across disciplines. Lights positioned, cameras rolling, code compiling, layouts set with millimeter precision. No outsourced dilution; pure craft executed with intent.",
-    deliverable: "Raw Production Assets, Initial Layouts & Functional Prototypes"
-  },
-  {
-    number: "04",
-    title: "Refine",
-    tagline: "Polish every important detail.",
-    summary: "Elevating good into undeniable. Nuanced color grading, micro-interaction timing, typographic kerning, auditory balance, and cross-browser stress tests. The invisible details make the difference.",
-    deliverable: "Color-Mastered Visuals, Perfected Typography & Production Build"
-  },
-  {
-    number: "05",
-    title: "Deliver",
-    tagline: "Turn the idea into something tangible and usable.",
-    summary: "Handing over assets ready to conquer the real world. Deployed web platforms, master cinema exports, high-res print files, and ongoing guidance. The answer to 'What can I do for you?' fulfilled.",
-    deliverable: "Production Deploy, Master Asset Vault & Comprehensive Handover"
-  }
-];
-
-export const CLIENTS: ClientItem[] = [
-  {
-    name: "Lumina Atelier",
-    industry: "High Fashion / Paris",
-    scope: "Campaign Photography & Lookbook",
-    year: "2025",
-    quote: "Anthony understands visual silence better than anyone we've worked with. The imagery redefined our brand's presence.",
-    author: "Elena Vance, Creative Director"
-  },
-  {
-    name: "Solaris Audio",
-    industry: "Electronic Music / London",
-    scope: "Visual Direction & Vinyl Packaging",
-    year: "2025",
-    quote: "He walked in, listened to our album once, and said 'I know exactly how this looks.' The result was nothing short of iconic.",
-    author: "Marcus Thorne, Label Founder"
-  },
-  {
-    name: "Pan-African Arts Foundation",
-    industry: "Cultural Heritage & Fine Art",
-    scope: "Exhibition Poster Art & Digital Archive",
-    year: "2024",
-    quote: "An extraordinary bridge between ancestral storytelling and contemporary design. A visionary creator.",
-    author: "Dr. Amara Kouassi, Chief Curator"
-  }
-];
+// export const CLIENTS: ClientItem[] = [
+//   {
+//     name: "Lumina Atelier",
+//     industry: "High Fashion / Paris",
+//     scope: "Campaign Photography & Lookbook",
+//     year: "2025",
+//     quote: "Anthony understands visual silence better than anyone we've worked with. The imagery redefined our brand's presence.",
+//     author: "Elena Vance, Creative Director"
+//   },
+//   {
+//     name: "Solaris Audio",
+//     industry: "Electronic Music / London",
+//     scope: "Visual Direction & Vinyl Packaging",
+//     year: "2025",
+//     quote: "He walked in, listened to our album once, and said 'I know exactly how this looks.' The result was nothing short of iconic.",
+//     author: "Marcus Thorne, Label Founder"
+//   },
+//   {
+//     name: "Pan-African Arts Foundation",
+//     industry: "Cultural Heritage & Fine Art",
+//     scope: "Exhibition Poster Art & Digital Archive",
+//     year: "2024",
+//     quote: "An extraordinary bridge between ancestral storytelling and contemporary design. A visionary creator.",
+//     author: "Dr. Amara Kouassi, Chief Curator"
+//   }
+// ];
 
 export const CV_DATA: CVData = {
   name: "Anthony Kimani",
